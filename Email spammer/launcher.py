@@ -24,7 +24,8 @@ def spam():
 
 # Button, entry, label
 
-label = Label(window, text="Warning you are about to spam this persons email",
+label = Label(window, text="Warning you are about to spam this persons email!\n"
+                           "If the window is not responding that means its working.",
               font=("Ariel", 12, "bold"),
               fg="Green",
               bg="Black")
@@ -32,7 +33,7 @@ label.pack()
 
 entry = Entry(window, font=("Ariel", 20))
 
-entry.place(x=55, y=100)
+entry.place(x=40, y=100)
 
 button = Button(window,
                 text="Enter",
@@ -41,8 +42,8 @@ button = Button(window,
                 activeforeground="white",
                 activebackground="black",
                 command=spam,
-                padx=5,
-                pady=5)
-button.place(x=370, y=102)
+                padx=9,
+                pady=6.5)
+button.place(x=360, y=100)
 
 window.mainloop()
